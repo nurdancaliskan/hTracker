@@ -11,7 +11,5 @@ class DietActivity : AppCompatActivity() {
     }
 
     fun onAddClick(View : View) {
-        //test
-
     }
 }
