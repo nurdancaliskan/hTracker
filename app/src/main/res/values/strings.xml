@@ -3,7 +3,6 @@
     <string name="login_email_hint">Email</string>
     <string name="login_password_hint">Password</string>
     <string name="addDietDesc">addDietDesc</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="diet_hours">DietHours</string>
 
     <string-array name="hours">
