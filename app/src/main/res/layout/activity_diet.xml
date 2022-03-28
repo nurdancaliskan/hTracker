@@ -12,8 +12,12 @@
         android:layout_height="match_parent"/>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -23,10 +27,8 @@
             android:layout_gravity="bottom|end"
             android:layout_margin="16dp"
             android:contentDescription="@string/addDietDesc"
-            android:onClick="onAddClick"
-            app:srcCompat="@drawable/ic_plus_24"/>
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
-
+            app:srcCompat="@drawable/ic_plus_24" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

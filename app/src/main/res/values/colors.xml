@@ -17,6 +17,6 @@
     <color name="whiteTextColor">#fff</color>
     <color name="primaryTextColor">#11CFC5</color>
     <color name= "textcolorY">#3E8914</color>
-
     <color name="buttonLogin">#EDD83D</color>
+    <color name="dailyDietBackgroundColor">#F6FFF8</color>
 </resources>
