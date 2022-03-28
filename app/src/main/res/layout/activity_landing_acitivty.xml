@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".LandingActivity"
     android:orientation="vertical"
-    android:background="@color/textcolorY">
+    android:background="@color/white">
 
     <TextView
         android:id="@+id/title_view"
@@ -17,9 +17,9 @@
         android:layout_marginTop="25dp"
         android:fontFamily="@font/scope_one"
         android:text="Let's Start"
-        android:textColor="@color/buttonLogin"
+        android:textColor="#3E8914"
         android:textSize="55sp"
-        android:textStyle="bold" />
+        android:textStyle="normal" />
 
     <GridLayout
         android:layout_width="match_parent"
@@ -53,9 +53,9 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="160dp"
-                    android:layout_height="160dp"
-                    android:src="@drawable/recipe" />
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/recipe3" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -96,9 +96,13 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="160dp"
-                    android:layout_height="160dp"
-                    android:src="@drawable/profile1" />
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/kadin1" />
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/adam1" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -140,8 +144,8 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="160dp"
-                    android:layout_height="160dp"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
                     android:src="@drawable/counter" />
 
                 <TextView
@@ -183,9 +187,9 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="160dp"
-                    android:layout_height="160dp"
-                    android:src="@drawable/diet1" />
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/diet2" />
 
                 <TextView
                     android:layout_width="wrap_content"

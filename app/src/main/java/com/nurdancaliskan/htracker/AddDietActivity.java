@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -27,7 +28,9 @@ public class AddDietActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent returnIntent = new Intent();
-                returnIntent.putExtra("result",findViewById(R.id.edt_add_diet_text).toString());
+                EditText asd = findViewById(R.id.edt_add_diet_text);
+                Integer dietNumber = Integer.parseInt(asd.getText().toString());
+                returnIntent.putExtra("result",dietNumber);
                 setResult(Activity.RESULT_OK,returnIntent);
                 finish();
             }

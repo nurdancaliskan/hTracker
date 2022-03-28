@@ -17,11 +17,11 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_centerInParent="true"
-        android:layout_marginStart="4dp"
-        android:layout_marginLeft="4dp"
-        android:layout_marginTop="-9dp"
-        android:layout_marginEnd="-3dp"
-        android:paddingTop="100dp">
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="-1dp"
+        android:paddingTop="70dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -31,12 +31,12 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="159dp">
 
                 <TextView
                     style="@style/viewParent.headerText.NoMode"
-                    android:layout_width="113dp"
-                    android:layout_height="106dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="156dp"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentBottom="true"
                     android:layout_marginLeft="0dp"
@@ -44,6 +44,7 @@
                     android:fontFamily="@font/scope_one"
                     android:text="Already \nhave an \nAccount?"
                     android:textColor="#3E8914"
+                    android:textSize="35sp"
                     android:textStyle="bold" />
 
                 <ImageView
@@ -52,10 +53,10 @@
                     android:layout_alignParentTop="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_marginBottom="12dp"
-                    android:src="@drawable/login1" />
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="-8dp"
+                    android:layout_marginBottom="7dp"
+                    android:src="@drawable/elmaadamlar" />
             </RelativeLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -93,10 +94,10 @@
                 android:layout_marginStart="120dp"
                 android:layout_marginTop="15dp"
                 android:background="@color/buttonLogin"
+                android:fontFamily="@font/scope_one"
                 android:text="Login"
                 android:textColor="@color/contentTextColor"
-                android:textStyle="normal"
-                android:fontFamily="@font/scope_one"/>
+                android:textStyle="bold" />
 
             <TextView
                 style="@style/viewParent"

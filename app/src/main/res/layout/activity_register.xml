@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="@color/textcolorY"
+    android:background="@color/login_bk_color"
     android:focusableInTouchMode="true"
     android:gravity="center"
     tools:context=".RegisterActivity">
@@ -15,8 +16,10 @@
         android:layout_height="match_parent"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="-34dp">
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="2dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -32,24 +35,25 @@
                 <TextView
                     style="@style/viewParent.headerText.NoMode"
                     android:layout_width="180dp"
-                    android:layout_height="200dp"
+                    android:layout_height="180dp"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginLeft="0dp"
+                    android:layout_marginLeft="10dp"
                     android:layout_marginBottom="0dp"
                     android:fontFamily="@font/scope_one"
                     android:text="Here’s\nyour first\nstep with \nus! "
-                    android:textColor="@color/whiteTextColor"
-                    android:textSize="35dp" />
+                    android:textColor="#3E8914"
+                    android:textSize="35dp"
+                    android:textStyle="bold" />
 
                 <ImageView
-                    android:layout_width="180dp"
-                    android:layout_height="200dp"
+                    android:layout_width="167dp"
+                    android:layout_height="143dp"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentRight="true"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginRight="20dp"
-                    android:src="@drawable/icon2" />
+                    android:layout_marginTop="24dp"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/icon3" />
             </RelativeLayout>
 
             <androidx.cardview.widget.CardView
@@ -140,6 +144,14 @@
         </LinearLayout>
 
     </ScrollView>
+
+    <View
+        android:layout_width="11dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_side_bg" />
 
     <ImageView
         android:layout_width="wrap_content"

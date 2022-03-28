@@ -23,6 +23,12 @@
         <activity
             android:name=".RegisterActivity"
             android:exported="false" />
+
+        <activity android:name=".RecipesActivity"
+            android:exported="false"/>
+
+        <activity android:name=".AddDietActivity"
+            android:exported="false"/>
         <activity
             android:name=".LoginActivity"
             android:exported="true">
