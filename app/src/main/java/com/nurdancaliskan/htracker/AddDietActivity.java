@@ -28,8 +28,8 @@ public class AddDietActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent returnIntent = new Intent();
-                EditText asd = findViewById(R.id.edt_add_diet_text);
-                Integer dietNumber = Integer.parseInt(asd.getText().toString());
+                EditText text = findViewById(R.id.edt_add_diet_text);
+                Integer dietNumber = Integer.parseInt(text.getText().toString());
                 returnIntent.putExtra("result",dietNumber);
                 setResult(Activity.RESULT_OK,returnIntent);
                 finish();

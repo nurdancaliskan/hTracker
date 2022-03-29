@@ -24,12 +24,12 @@ public class LandingActivity extends AppCompatActivity {
     }
 
     public void onCounterClick(View View){
-        startActivity(new Intent(this, RegisterActivity.class));
+        startActivity(new Intent(this, CounterActivity.class));
         overridePendingTransition(R.anim.slide_in_right,R.anim.stay);
     }
 
     public void onProfileClick(View View){
-        startActivity(new Intent(this, RegisterActivity.class));
+        startActivity(new Intent(this, ProfileActivity.class));
         overridePendingTransition(R.anim.slide_in_right,R.anim.stay);
     }
 }

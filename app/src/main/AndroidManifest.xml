@@ -11,6 +11,12 @@
         android:theme="@style/Theme.HTracker"
         android:windowSoftInputMode="adjustPan">
         <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".DailyDietActivity"
             android:exported="false"
             android:theme="@style/Theme.HTracker.NoActionBar" />
@@ -23,12 +29,12 @@
         <activity
             android:name=".RegisterActivity"
             android:exported="false" />
-
-        <activity android:name=".RecipesActivity"
-            android:exported="false"/>
-
-        <activity android:name=".AddDietActivity"
-            android:exported="false"/>
+        <activity
+            android:name=".RecipesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddDietActivity"
+            android:exported="false" />
         <activity
             android:name=".LoginActivity"
             android:exported="true">
