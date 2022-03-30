@@ -14,7 +14,7 @@ public class LandingActivity extends AppCompatActivity {
     }
 
     public void onRecipeClick(View View){
-        startActivity(new Intent(this,RecipesActivity.class));
+        startActivity(new Intent(this,DietActivity.class));
         overridePendingTransition(R.anim.slide_in_right,R.anim.stay);
     }
 
