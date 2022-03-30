@@ -34,14 +34,15 @@
                     android:layout_centerVertical="true" />
 
                 <TextView
+                    style="@style/yesil"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:layout_toEndOf="@+id/txt_edit_profile"
                     android:fontFamily="@font/scope_one"
-                    tools:text="Edit Profile"
+                    android:text="Edit Profile"
                     android:textColor="@color/black"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -54,9 +55,9 @@
                     android:layout_marginEnd="30dp"
                     android:layout_marginRight="10dp"
                     android:fontFamily="@font/scope_one"
-                    tools:text="SAVE"
+                    android:text="SAVE"
                     android:textColor="@color/black"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -84,7 +85,8 @@
             android:layout_height="85dp"
             android:layout_gravity="center"
             android:layout_margin="10dp"
-            tools:src="@mipmap/ic_launcher" />
+            android:src="@mipmap/ic_launcher"
+            tools:ignore="ImageContrastCheck" />
 
         <TextView
             android:id="@+id/txt_change_photo"
@@ -100,43 +102,46 @@
 
         <com.rengwuxian.materialedittext.MaterialEditText
             android:id="@+id/material_edt_text_profileName"
+            style="@style/yesil"
+
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:hint="Name"
-            style="@style/yesil"
+            android:textColorHint="#0277BD"
             app:met_floatingLabel="normal" />
 
         <com.rengwuxian.materialedittext.MaterialEditText
             android:id="@+id/material_edt_text_profileUsername"
+            style="@style/yesil"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:hint="Username"
-            style="@style/yesil"
             app:met_floatingLabel="normal" />
 
         <com.rengwuxian.materialedittext.MaterialEditText
             android:id="@+id/material_edt_text_profilePhoneNumber"
+            style="@style/yesil"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/yesil"
             android:layout_marginTop="20dp"
             android:hint="Phone number"
             app:met_floatingLabel="normal" />
 
         <com.rengwuxian.materialedittext.MaterialEditText
             android:id="@+id/material_edt_text_profileEmail"
+            style="@style/yesil"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            style="@style/yesil"
             android:hint="Email"
             app:met_floatingLabel="normal" />
 
     </LinearLayout>
 
-    <RelativeLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="154dp"
         android:layout_alignParentStart="true"
@@ -146,48 +151,42 @@
         android:orientation="vertical"
         android:padding="20dp">
 
-        <LinearLayout
-            android:id="@+id/end_bar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="10dp"
-            android:orientation="horizontal" />
-
         <Button
             android:id="@+id/btn_apply"
-            android:layout_width="150dp"
-            android:layout_height="65dp"
+            android:layout_width="130dp"
+            android:layout_height="48dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="240dp"
-            android:layout_marginTop="7dp"
-            android:layout_marginBottom="41dp"
-
+            android:layout_marginStart="20dp"
             android:background="@color/buttonLogin"
             android:fontFamily="@font/scope_one"
+            android:text="Apply"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="16sp"
             android:textStyle="bold"
-            tools:text="Apply" />
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="-3dp" />
 
         <Button
             android:id="@+id/btn_cancel1"
-            android:layout_width="150dp"
-            android:layout_height="65dp"
+            android:layout_width="130dp"
+            android:layout_height="48dp"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="30dp"
-            android:layout_marginBottom="41dp"
+            android:layout_marginStart="200dp"
             android:background="@color/buttonLogin"
             android:fontFamily="@font/scope_one"
             android:text="CANCEL"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="16sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent" />
-    </RelativeLayout>
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
 
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </RelativeLayout>

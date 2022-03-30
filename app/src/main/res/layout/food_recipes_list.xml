@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
@@ -37,7 +38,7 @@
                     android:id="@+id/food_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
+                    android:layout_margin="5dp"
                     android:fontFamily="@font/scope_one"
                     android:orientation="vertical"
                     android:text="Food Name"
@@ -48,8 +49,8 @@
                 <TextView
                     android:id="@+id/recipe_list_textview"
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:layout_margin="10dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="5dp"
                     android:fontFamily="@font/scope_one"
                     android:orientation="vertical"
                     android:text="Recipe" />

@@ -7,4 +7,164 @@
     android:layout_height="match_parent"
     tools:context=".CounterActivity">
 
+
+    <TextView
+        android:id="@+id/important_txt"
+        android:layout_width="265dp"
+        android:layout_height="135dp"
+        android:fontFamily="@font/scope_one"
+        android:text="It's very important that you drink plenty of water in summer :)"
+        android:textColor="#3E8914"
+        android:textSize="25sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.89"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.078"
+        tools:ignore="MissingConstraints">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/coffee_imageView"
+        android:layout_width="107dp"
+        android:layout_height="94dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="12dp"
+        android:src="@drawable/coffee1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.598"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/water_imageView"
+        android:layout_width="104dp"
+        android:layout_height="105dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="4dp"
+        android:src="@drawable/su_ic"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.314"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edtText_water"
+        style="@style/yesil"
+        android:layout_width="220dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="36dp"
+        android:hint="Water:"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.308"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edtText_coffee"
+        style="@style/yesil"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="36dp"
+        android:hint="Coffee:"
+        android:maxLines="1"
+        android:textColorHint="#546E7A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.588"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/button_minus1"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="60dp"
+        android:background="@color/buttonLogin"
+        android:fontFamily="@font/scope_one"
+        android:text="-"
+        android:textColor="@color/contentTextColor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.388"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/button_plus2"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="160dp"
+        android:background="@color/buttonLogin"
+        android:fontFamily="@font/scope_one"
+        android:text="+"
+        android:textColor="@color/contentTextColor"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_minus2"
+        app:layout_constraintHorizontal_bias="0.279"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.651"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/button_minus2"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="60dp"
+        android:background="@color/buttonLogin"
+        android:fontFamily="@font/scope_one"
+        android:text="-"
+        android:textColor="@color/contentTextColor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/button_plus1"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="160dp"
+        android:background="@color/buttonLogin"
+        android:fontFamily="@font/scope_one"
+        android:text="+"
+        android:textColor="@color/contentTextColor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_minus1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.388"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,6 +4,8 @@
     <string name="login_password_hint">Password</string>
     <string name="addDietDesc">addDietDesc</string>
     <string name="diet_hours">DietHours</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="sign_out">Sign Out</string>
 
     <string-array name="hours">
         <item>01.00</item>
