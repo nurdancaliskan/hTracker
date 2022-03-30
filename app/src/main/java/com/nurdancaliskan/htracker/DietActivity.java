@@ -29,7 +29,7 @@ public class DietActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if(data != null) {
+        if(data != null && requestCode == RESULT_OK) {
             Bundle extras = data.getExtras();
             dietNumber = extras.getInt("result");
         }

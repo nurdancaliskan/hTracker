@@ -22,9 +22,9 @@ public class ProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_profile);
 
         profile_frame = findViewById(R.id.profile_picture_profileFrame);
-        txt_username = findViewById(R.id.txt_username_profilFrame);
-        txt_date_of_birth = findViewById(R.id.txt_profilBio_date_of_birth);
-        txt_height_weight = findViewById(R.id.txt_profilBio_height_weight);
+        txt_username = findViewById(R.id.txt_username_profileFrame);
+        txt_date_of_birth = findViewById(R.id.txt_profileBio_date_of_birth);
+        txt_height_weight = findViewById(R.id.txt_profileBio_height_weight);
         txt_gender = findViewById(R.id.txt_profileBio_gender);
         btn_edit_profile = findViewById(R.id.imgBtn_edit_profile);
         btn_signout = findViewById(R.id.imgBtn_sign_out);

@@ -3,8 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+    android:layout_height="match_parent">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/bar_profileFrame"
@@ -14,6 +13,7 @@
         android:layout_margin="20dp">
 
         <RelativeLayout
+            android:background="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" >
 
@@ -42,26 +42,25 @@
                     android:id="@+id/profile_picture_profileFrame"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    tools:src="@mipmap/ic_launcher" />
+                    tools:ignore="ImageContrastCheck"
+                    android:src="@mipmap/ic_launcher" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
-                    android:orientation="vertical"
-                    android:paddingLeft="20dp"
-                    android:paddingRight="4dp">
+                    android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/txt_username_profilFrame"
+                        android:id="@+id/txt_username_profileFrame"
                         android:layout_width="131dp"
                         android:layout_height="50dp"
                         android:layout_marginStart="10dp"
                         android:fontFamily="@font/scope_one"
                         android:maxLines="1"
+                        android:text="Username"
                         android:textColor="@color/black"
                         android:textSize="20sp"
-                        android:textStyle="bold"
-                        tools:text="Username" />
+                        android:textStyle="bold" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -74,28 +73,28 @@
                 android:padding="10dp">
 
                 <TextView
-                    android:id="@+id/txt_profilBio_date_of_birth"
+                    android:id="@+id/txt_profileBio_date_of_birth"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:fontFamily="@font/scope_one"
                     android:maxLines="5"
                     android:textColor="@color/cardview_dark_background"
-                    android:textSize="16dp"
+                    android:textSize="16sp"
                     android:textStyle="bold"
-                    tools:text="date of birth" />
+                    android:text="date of birth" />
 
                 <TextView
-                    android:id="@+id/txt_profilBio_height_weight"
+                    android:id="@+id/txt_profileBio_height_weight"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:fontFamily="@font/scope_one"
                     android:maxLines="5"
                     android:textColor="@color/cardview_dark_background"
-                    android:textSize="16dp"
+                    android:textSize="16sp"
                     android:textStyle="bold"
-                    tools:text="height/weight" />
+                    android:text="height/weight" />
 
                 <TextView
                     android:id="@+id/txt_profileBio_gender"
@@ -105,9 +104,9 @@
                     android:fontFamily="@font/scope_one"
                     android:maxLines="5"
                     android:textColor="@color/cardview_dark_background"
-                    android:textSize="16dp"
+                    android:textSize="16sp"
                     android:textStyle="bold"
-                    tools:text="Gender" />
+                    android:text="Gender" />
 
             </LinearLayout>
 
@@ -130,7 +129,7 @@
                     android:layout_weight="1"
                     android:background="@color/buttonLogin"
                     android:fontFamily="@font/scope_one"
-                    android:text="Edit Profile"
+                    android:text="@string/edit_profile"
                     android:textStyle="bold" />
 
                 <Button
@@ -142,7 +141,7 @@
                     android:layout_weight="1"
                     android:background="@color/buttonLogin"
                     android:fontFamily="@font/scope_one"
-                    android:text="Sign Out"
+                    android:text="@string/sign_out"
                     android:textStyle="bold" />
 
             </LinearLayout>

@@ -36,6 +36,9 @@
             android:name=".AddDietActivity"
             android:exported="false" />
         <activity
+            android:name=".CounterActivity"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
