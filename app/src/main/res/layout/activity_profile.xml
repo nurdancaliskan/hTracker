@@ -43,7 +43,7 @@
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     tools:ignore="ImageContrastCheck"
-                    android:src="@mipmap/ic_launcher" />
+                    android:src="@drawable/nurdan" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -52,18 +52,19 @@
 
                     <TextView
                         android:id="@+id/txt_username_profileFrame"
-                        android:layout_width="131dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="50dp"
                         android:layout_marginStart="10dp"
                         android:fontFamily="@font/scope_one"
                         android:maxLines="1"
-                        android:text="Username"
+                        android:text="nurdancaliskan"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold" />
                 </LinearLayout>
 
             </LinearLayout>
+
 
             <LinearLayout
                 android:id="@+id/second_bar"
@@ -73,16 +74,27 @@
                 android:padding="10dp">
 
                 <TextView
-                    android:id="@+id/txt_profileBio_date_of_birth"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/txt_profileBio_name"
+                    android:layout_width="85dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:fontFamily="@font/scope_one"
                     android:maxLines="5"
+                    android:text="Nurdan Çalışkan"
                     android:textColor="@color/cardview_dark_background"
                     android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:text="date of birth" />
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/txt_profileBio_date_of_birth"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/scope_one"
+                    android:maxLines="5"
+                    android:text="26.10.2000"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/txt_profileBio_height_weight"
@@ -91,10 +103,10 @@
                     android:layout_marginTop="5dp"
                     android:fontFamily="@font/scope_one"
                     android:maxLines="5"
+                    android:text="Height: 160 Weight: 47 "
                     android:textColor="@color/cardview_dark_background"
                     android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:text="height/weight" />
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/txt_profileBio_gender"
@@ -103,13 +115,12 @@
                     android:layout_marginTop="5dp"
                     android:fontFamily="@font/scope_one"
                     android:maxLines="5"
+                    android:text="Female"
                     android:textColor="@color/cardview_dark_background"
                     android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:text="Gender" />
+                    android:textStyle="bold" />
 
             </LinearLayout>
-
 
             <LinearLayout
                 android:id="@+id/third_bar"
