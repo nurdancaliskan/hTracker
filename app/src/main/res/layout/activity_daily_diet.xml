@@ -1,92 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
- <androidx.constraintlayout.widget.ConstraintLayout
+<androidx.constraintlayout.widget.ConstraintLayout
 
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/dailyDietBackgroundColor">
+    android:background="@drawable/sari">
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="110dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="132dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="DuplicateIds,SpeakableTextPresentCheck" />
+   <EditText
+       android:id="@+id/edt_breakfast"
+       style="@style/yesil"
+       android:layout_width="250dp"
+       android:layout_height="50dp"
+       android:layout_marginTop="168dp"
+       android:layout_marginEnd="12dp"
+       android:hint="Breakfast:"
+       android:maxLines="1"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.968"
+       app:layout_constraintStart_toStartOf="@+id/spinner"
+       app:layout_constraintTop_toTopOf="parent"
+       tools:ignore="MissingConstraints" />
 
-    <Spinner
-        android:id="@+id/spinner_two"
-        android:layout_width="110dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="220dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="DuplicateIds,SpeakableTextPresentCheck" />
+   <Button
+       android:id="@+id/btn_save"
+       android:layout_width="123dp"
+       android:layout_height="51dp"
+       android:layout_marginBottom="180dp"
+       android:background="@color/buttonLogin"
+       android:fontFamily="@font/scope_one"
+       android:text="Save"
+       android:textColor="@color/contentTextColor"
+       android:textStyle="bold"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.457"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="@+id/edt_breakfast"
+       app:layout_constraintVertical_bias="1.0"
+       tools:ignore="MissingConstraints" />
 
-    <Spinner
-        android:id="@+id/spinner_three"
-        android:layout_width="110dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="304dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="SpeakableTextPresentCheck" />
+   <Spinner
+       android:id="@+id/spinner_two"
+       android:layout_width="110dp"
+       android:layout_height="50dp"
+       android:layout_marginStart="24dp"
+       android:layout_marginTop="256dp"
+       android:layout_marginEnd="20dp"
+       app:layout_constraintEnd_toStartOf="@+id/edt_lunch"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       tools:ignore="DuplicateIds,SpeakableTextPresentCheck" />
 
-    <EditText
-        android:id="@+id/edt_breakfast"
-        style="@style/yesil"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="16dp"
-        android:hint="Breakfast:"
-        android:maxLines="1"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="132dp" />
+   <Spinner
+       android:id="@+id/spinner"
+       android:layout_width="110dp"
+       android:layout_height="50dp"
+       android:layout_marginStart="20dp"
+       android:layout_marginTop="136dp"
+       app:layout_constraintBottom_toTopOf="@+id/spinner_two"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.485"
+       tools:ignore="DuplicateIds,SpeakableTextPresentCheck" />
 
-    <EditText
-        android:id="@+id/edt_lunch"
-        style="@style/yesil"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="16dp"
-        android:hint="Lunch:"
-        android:maxLines="1"
-        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck"
-        tools:layout_editor_absoluteX="146dp"
-        tools:layout_editor_absoluteY="220dp" />
+   <EditText
+       android:id="@+id/edt_lunch"
+       style="@style/yesil"
+       android:layout_width="250dp"
+       android:layout_height="50dp"
+       android:layout_marginTop="36dp"
+       android:layout_marginEnd="15dp"
+       android:hint="Lunch:"
+       android:maxLines="1"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toEndOf="@+id/spinner_two"
+       app:layout_constraintTop_toBottomOf="@+id/edt_breakfast"
+       tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
-    <EditText
-        android:id="@+id/edt_dinner"
-        style="@style/yesil"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="16dp"
-        android:hint="Dinner:"
-        android:maxLines="1"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck"
-        tools:layout_editor_absoluteY="304dp"
-        android:autofillHints="" />
+   <EditText
+       android:id="@+id/edt_dinner"
+       style="@style/yesil"
+       android:layout_width="250dp"
+       android:layout_height="50dp"
+       android:layout_marginTop="84dp"
+       android:layout_marginEnd="12dp"
+       android:autofillHints=""
+       android:hint="Dinner:"
+       android:maxLines="1"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="1.0"
+       app:layout_constraintStart_toStartOf="@+id/spinner_three"
+       app:layout_constraintTop_toTopOf="@+id/edt_lunch"
+       tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
-    <Button
-        android:id="@+id/btn_save"
-        android:layout_width="112dp"
-        android:layout_height="57dp"
-        android:background="@color/buttonLogin"
-        android:fontFamily="@font/scope_one"
-        android:text="Save"
-        android:textColor="@color/contentTextColor"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="150dp"
-        tools:layout_editor_absoluteY="400dp" />
+   <Spinner
+       android:id="@+id/spinner_three"
+       android:layout_width="110dp"
+       android:layout_height="50dp"
+       android:layout_marginStart="20dp"
+       android:layout_marginTop="32dp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/spinner_two"
+       tools:ignore="SpeakableTextPresentCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
