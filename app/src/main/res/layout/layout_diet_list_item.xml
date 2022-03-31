@@ -22,11 +22,12 @@
             android:id="@+id/dinnerTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:fontFamily="@font/scope_one"
             android:text="dfggdfssdgfgsdfdfsgdfgs"
             android:textAlignment="center"
-            android:textSize="12sp"
+            android:textSize="20sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
             app:layout_constraintTop_toBottomOf="@+id/guideline2" />
 
@@ -34,10 +35,11 @@
             android:id="@+id/dinnerText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/scope_one"
             android:text="dfggdfssdgfgsdfdfsgdfgs"
             android:textAlignment="center"
-            android:textSize="12sp"
+            android:textSize="20sp"
             app:layout_constraintStart_toStartOf="@+id/guideline3"
             app:layout_constraintTop_toBottomOf="@+id/guideline2" />
 
@@ -45,25 +47,26 @@
             android:id="@+id/launchTime"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="12dp"
             android:ellipsize="end"
+            android:fontFamily="@font/scope_one"
             android:maxLines="2"
             android:text="sdfggfddfgssgfd"
-            android:layout_marginEnd="20dp"
-
-            android:textSize="12sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintBottom_toTopOf="@id/guideline2"/>
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@id/guideline2"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/launchText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="12dp"
             android:ellipsize="end"
+            android:fontFamily="@font/scope_one"
             android:maxLines="2"
             android:text="sdfggfddfgssgfd"
-            android:textSize="12sp"
+            android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@id/guideline2"
             app:layout_constraintStart_toStartOf="@+id/guideline3" />
 
@@ -84,8 +87,10 @@
             android:layout_marginBottom="12dp"
             android:layout_marginEnd="20dp"
             android:ellipsize="end"
+            android:fontFamily="@font/scope_one"
+
             android:text="dfgdghdfghd"
-            android:textSize="12sp"
+            android:textSize="20sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
             app:layout_constraintBottom_toTopOf="@id/guideline1" />
 
@@ -111,7 +116,8 @@
             android:layout_marginEnd="20dp"
             android:ellipsize="end"
             android:text="dfgdghdfghd"
-            android:textSize="12sp"
+            android:fontFamily="@font/scope_one"
+            android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@id/guideline1"
             app:layout_constraintStart_toStartOf="@+id/guideline3" />
 
@@ -127,7 +133,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent=".50" />
+            app:layout_constraintGuide_percent=".33" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline2"

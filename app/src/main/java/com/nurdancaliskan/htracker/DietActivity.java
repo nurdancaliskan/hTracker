@@ -16,6 +16,7 @@ public class DietActivity extends AppCompatActivity {
     ArrayList<DietData> dietData = new ArrayList<>();
     RecyclerView recyclerView;
     Integer dietNumber = 0;
+    DietRecyclerViewAdapter dietAdapter;
     int LAUNCH_FIRST_ACTIVITY = 1;
     int LAUNCH_SECOND_ACTIVITY = 2;
 
@@ -35,6 +36,7 @@ public class DietActivity extends AppCompatActivity {
                 new RecyclerItemClickListener(getBaseContext(), recyclerView ,new RecyclerItemClickListener.OnItemClickListener() {
                     @Override public void onItemClick(View view, int position) {
                         Intent i = new Intent(DietActivity.this, DailyDietActivity.class);
+                        i.putExtra("position",position);
                         startActivityForResult(i, LAUNCH_SECOND_ACTIVITY);
                     }
 
@@ -53,11 +55,20 @@ public class DietActivity extends AppCompatActivity {
             for (int i=0; i<dietNumber; i++){
                 dietData.add(new DietData(String.valueOf(i+1),"","","","","",""));
             }
-            DietRecyclerViewAdapter recipesAdapter = new DietRecyclerViewAdapter(dietData,DietActivity.this);
-            recyclerView.setAdapter(recipesAdapter);
+             dietAdapter = new DietRecyclerViewAdapter(dietData,DietActivity.this);
+            recyclerView.setAdapter(dietAdapter);
         }
         else if(data!=null && requestCode == LAUNCH_SECOND_ACTIVITY){
+            Bundle extras = data.getExtras();
+            int position = extras.getInt("position");
 
+            dietData.get(position).setBreakfast(extras.getString("breakfastText"));
+            dietData.get(position).setLaunch(extras.getString("launchText"));
+            dietData.get(position).setDinner(extras.getString("dinnerText"));
+            dietData.get(position).setBreakfastTime(extras.getString("spinnerText"));
+            dietData.get(position).setLunchTime(extras.getString("spinner2Text"));
+            dietData.get(position).setDinnerTime(extras.getString("spinner3Text"));
+            dietAdapter.notifyDataSetChanged();
         }
     }
 }
